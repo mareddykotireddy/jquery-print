@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ 
+  <meta charset="utf-8">
+  <h1>
+    <!-- <title>eArbor</title> -->
+
+  </h1>
+
+  <!-- Search Engine -->
+  <meta name="description" content="printThis is an extensible jQuery printing plugin that allows for printing specific or multiple DOM elements">
+  <meta name="image" content="https://jasonday.github.io/printThis/assets/images/print.png">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="printThis - jQuery printing plugin">
+  <meta itemprop="description" content="printThis is an extensible jQuery printing plugin that allows for printing specific or multiple DOM elements">
+  <meta itemprop="image" content="https://jasonday.github.io/printThis/assets/images/print.png">
+  <!-- Twitter -->
+  <!-- <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="printThis - jQuery printing plugin">
+  <meta name="twitter:description" content="printThis is an extensible jQuery printing plugin that allows for printing specific or multiple DOM elements">
+  <meta name="twitter:image:src" content="https://jasonday.github.io/printThis/assets/images/print.png"> -->
+ 
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+
+
+</head>
+
+<body>
+
+
+  <header class="container">
+   
+    <!-- <h1>eArbor</h1> -->
+  </header>
+  <hr/>
+  <section class="container" role="main">
+    <div class="row">
+      <div class="twelve columns">
+       
+  <h2 id="demos">eArbor</h2>
+  <hr/>
+  <section class="container" aria-describedby="demos">
+    <br/>
+    <div >
+      <div class="one-half column">
+        <a id="basic" href="#nada" class="button button-primary">Print </a>
+        <pre>
+             
+      </div>
+    </div>
+    <div class="row">
+      <div class="demo twelve columns">
+       
+  1	iPhone<br/><br/>
+  2	iPhone 3G<br/><br/>
+  3	iPhone 3GS<br/><br/>
+  4	iPhone 4<br/><br/>
+  5	iPhone 4S<br/><br/>
+  6	iPhone 5<br/><br/>
+  7	iPhone 5c<br/><br/>
+  8	iPhone 5s<br/><br/>
+  9	iPhone 6<br/><br/>
+  10	iPhone 6 Plus<br/><br/>
+  11	iPhone 6s<br/><br/>
+  12	iPhone 6s Plus<br/><br/>
+  13	iPhone SE (1st generation)<br/><br/>
+  14	iPhone 7<br/><br/>
+  15	iPhone 7 Plus<br/><br/>
+  16	iPhone 8<br/><br/>
+  17	iPhone 8 Plus<br/><br/>
+  18	iPhone X<br/><br/>
+  19	iPhone XR<br/><br/>
+  20	iPhone XS<br/><br/>
+  21	iPhone XS Max<br/><br/>
+  22	iPhone 11<br/><br/>
+  23	iPhone 11 Pr<br/><br/>
+  24	iPhone 11 Pro Max<br/><br/>
+  25	iPhone SE (2nd generation)<br/><br/>
+  26	iPhone 12 mini<br/><br/>
+  27	iPhone 12<br/><br/>
+  28	iPhone 12 Pro<br/><br/>
+  29	iPhone 12 Pro Max<br/><br/>
+  30	iPhone 13 mini<br/><br/>
+  31	iPhone 13<br/><br/>
+  32	iPhone 13 Pro<br/><br/>
+  33	iPhone 13 Pro Max<br/><br/>
+  34	iPhone SE (3rd generation)<br/><br/>
+  35	iPhone 14<br/><br/>
+  36	iPhone 14 Plus<br/><br/>
+  37	iPhone 14 Pro<br/><br/>
+  38	iPhone 14 Pro Max<br/><br/>
+  
+</p>
+      </div>
+    </div>
+  </section>
+  <hr/>
+ 
+  <br/>
+  <br/>
+ 
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- printThis -->
+
+  <script type="text/javascript" src="printThis.js"></script>
+
+  <!-- demo -->
+  <div class="koti">
+
+    <script>
+      $('#basic').on("click", function () {
+        $('.demo').printThis({
+          base: "https://jasonday.github.io/printThis/",
+          header: "<header class='container'><h1>eArbor</h1></header>",
+          footer:"<footer class='koti'><h5>address:Silicon Valley, Madhapur, Hyderabad, Telangana 500081,<br/>phone no :9542540010</h5></footer>",
+          css: "@media print { header, footer { page-break-before: always; } }"
+        });
+      });
+      
+      
+      </script>
+      </div>
+    
+      <footer class='koti'><h6>address:Silicon Valley, Madhapur, Hyderabad, Telangana 500081,<br/>phone no :9542540010</h6></footer>
+</body>
+</html>
